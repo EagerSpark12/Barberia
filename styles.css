@@ -1,4 +1,4 @@
-.bienvenida{
+.titulo{
     background-color: black;
     color: #d4af37;
     text-shadow: 2px 2px 4px rgba(139, 0, 0, 0.7);
@@ -53,8 +53,23 @@
     text-shadow: 2px 1px 10px rgb(170, 171, 187);
 }
 
-.servicio a{
-    text-align: left;
+.servicio a {
+    display: block;
+    width: fit-content;
+    margin-left: auto;
+    padding:10px;
+    border: 2px solid #c2bdaf;
+    border-radius: 15px;
+    box-shadow: 0px 8px 20px rgb(176, 176, 184, 0.5);
+    background-color: rgb(255, 255, 255);
+    text-decoration: none;
+    color: #444;
+}
+
+.servicio a:hover{
+    background-color: #cead41;
+    box-shadow: 0px 8px 20px #c2a237;
+    border: 2px solid rgba(182, 154, 31, 0.5);
 }
 
 .horario-atencion{
@@ -68,4 +83,75 @@
     border-radius: 15px;
     margin: 15px auto;
     box-shadow: 0px 8px 20px rgba(61, 64, 87, 0.7);
+}
+
+.testimonio{
+    width: 60%;
+    max-width: 300px;
+    padding: 10px;
+    background-color: rgb(223, 239, 241);
+    border: 2px solid #d0e8e9;
+    text-shadow: 0px 8px 20px ;
+    box-shadow: 0px 8px 20px rgb(170, 171, 187);
+    margin: 25px;
+    border-radius: 15px;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    background-image: url("img/fondo-barberia.jpg");
+    color:rgb(194, 206, 36);
+}
+
+.bienvenida{
+    background-color: #cead41;
+    color: #702929;
+    text-shadow: 0px 8px 20px rgb(0, 0, 0);
+    width: 60%;
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+    border: 2px solid rgb(212, 186, 38);
+    box-shadow: 0px 8px 20px rgb(0, 0, 0);
+    border-radius: 15px;
+}
+
+.boton-bienvenida{
+    background-color: #eed66e;
+    display: block;
+    width: fit-content;
+    margin: auto;
+    padding: 10px;
+    border: 2px solid rgba(211, 201, 68, 0.5);
+    text-decoration: none;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    color: #111;
+}
+
+.boton-bienvenida:hover{
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 8px 20px rgb(176, 176, 184, 0.5);
+    border: 2px solid #c2bdaf;
+}
+
+.boton-servicios{
+    display: block;
+    width: fit-content;
+    margin: 15px auto;
+    background-color: rgb(235, 220, 174);
+    color: #111;
+    text-decoration: none;
+    padding: 5px;
+    border: 2px solid rgb(236, 221, 133);
+    border-radius: 15px;
+}
+
+.boton-servicios:hover{
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 8px 20px rgb(176, 176, 184, 0.5);
+    border: 2px solid #c2bdaf;
 }
