@@ -9,7 +9,7 @@
     margin: 15px auto;
     border-radius: 15px;
     text-align: center;
-    box-shadow: 0px 8px 20px rgba(37, 36, 36, 0.5);
+    box-shadow: 0px 8px 10px rgba(192, 177, 177, 0.5);
 
 }
 
@@ -167,14 +167,15 @@ header nav{
     text-align: center;
     width: 50%;
     max-width: 1000px;
-    margin: 15px auto;
+    margin: 25px auto;
     padding: 15px;
     border: 2px solid rgb(46, 33, 33);
     border-radius: 15px;
+    box-shadow: 0px 4px 10px rgb(189, 190, 199)
 }
 
 header nav a{
-    color: #f38f0d;
+    color: #d6b10c;
     text-decoration: none;
     text-shadow: 0px 2px 5px #131212;
     padding: 10px 20px;
