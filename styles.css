@@ -14,40 +14,47 @@
 }
 
 .promocion{
-    background-color: #8b0000;
+    background-color: #a1720c;
     width: 70%;
     max-width: 700px;
     color: #f2f2f2;
     padding: 25px;
-    border: 2px solid #501f18;
+    border: 2px solid #916811;
     margin: 15px auto;
     text-align: center;
     border-radius: 15px;
-    box-shadow: 0px 8px 20px rgba(139, 0, 0, 0.5);
+    box-shadow: 0px 8px 20px rgba(139, 101, 51, 0.5);
 }
 
 .promocion h2{
-    color: #ffd700;
+    color: rgb(58, 59, 65);
+    text-shadow: 0px 8px 20px;
 }
 
-.servicios{
-    padding: 15px;
-}
+
+
 
 .servicio{
-    background-color: #35644e;
+    background-color: #1d201f;
     width: 60%;
     color: rgba(226, 196, 95, 0.9);
     text-shadow: 2px 1px 10px rgba(204, 206, 94, 0.7);
     max-width: 400px;
     padding: 20px;
-    border: 2px solid rgba(99, 99, 105, 0.7);
+    border: 2px solid #bb901b;
     border-radius: 15px;
     margin: 20px;
-    box-shadow: 0px 8px 20px rgba(144, 144, 151, 0.7);
-
+    box-shadow: 0px 8px 20px rgba(204, 156, 23, 0.7);
+    transition: 0.3s;
 }
 
+.servicio:hover{
+    transform: translateY(-10px);
+}
+
+.servicios h2{
+    text-align: center;
+}
 .servicio span{
     color: #e2dada;
     text-shadow: 2px 1px 10px rgb(170, 171, 187);
@@ -70,6 +77,8 @@
     background-color: #cead41;
     box-shadow: 0px 8px 20px #c2a237;
     border: 2px solid rgba(182, 154, 31, 0.5);
+    transform: translateY(-5px);
+    transition: 0.3s;
 }
 
 .horario-atencion{
@@ -142,6 +151,7 @@ body{
     background-color: rgb(255, 255, 255);
     box-shadow: 0px 8px 20px rgb(176, 176, 184, 0.5);
     border: 2px solid #c2bdaf;
+    transition: 0.3s;
 }
 
 .boton-servicios{
@@ -160,6 +170,7 @@ body{
     background-color: rgb(255, 255, 255);
     box-shadow: 0px 8px 20px rgb(176, 176, 184, 0.5);
     border: 2px solid #c2bdaf;
+    transition: 0.3s;
 }
 
 header nav{
@@ -171,7 +182,7 @@ header nav{
     padding: 15px;
     border: 2px solid rgb(46, 33, 33);
     border-radius: 15px;
-    box-shadow: 0px 4px 10px rgb(189, 190, 199)
+    box-shadow: 0px 4px 10px rgb(189, 190, 199);
 }
 
 header nav a{
@@ -185,4 +196,37 @@ header nav a{
 
 header nav a:hover{
     color: #ffffff;
+    transition: 0.3s;
+}
+
+.contenedor-servicios{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/*
+.contenedor-servicios{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+*/
+
+@media (max-width: 320px){
+    .contenedor-servicios{
+        flex-direction: column;
+    }
+
+    .servicio{
+        width: 90%;
+    }
+
+    .header nav{
+        width: 80%;
+    }
+
 }
