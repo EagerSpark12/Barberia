@@ -257,9 +257,8 @@ header nav{
 
 .menu{
     display: flex;
-    flex: 4;
-    justify-content: space-evenly;
-    width: fit-content;
+    flex: 3;
+    justify-content: start;
 }
 
 header nav a{
