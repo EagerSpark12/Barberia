@@ -120,18 +120,32 @@ body{
     color: #999;
 }
 
+.hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url("img/fondo.jpg");
+    margin: 0;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 .bienvenida{
-    background-color: #cead41;
-    color: #702929;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-family: arial-labler;
     text-shadow: 0px 8px 20px rgb(0, 0, 0);
     width: 60%;
     max-width: 600px;
-    margin: auto;
+    margin: 30px auto;
     text-align: center;
     padding: 10px;
-    border: 2px solid rgb(212, 186, 38);
-    box-shadow: 0px 8px 20px rgb(0, 0, 0);
-    border-radius: 15px;
 }
 
 .boton-bienvenida{
@@ -175,14 +189,56 @@ body{
 
 header nav{
     background-color: rgb(0, 0, 0);
-    text-align: center;
-    width: 50%;
-    max-width: 1000px;
-    margin: 25px auto;
-    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    margin: auto;
     border: 2px solid rgb(46, 33, 33);
-    border-radius: 15px;
     box-shadow: 0px 4px 10px rgb(189, 190, 199);
+}
+
+.logo{
+    display: flex;
+    flex: 3;
+    padding: 10px;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #d4af37;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.contacto{
+    display: flex;
+    display: block;
+    width: fit-content;
+    flex: 1;
+    justify-content: center;
+    padding: 10px;
+    margin: 15px;
+    text-align: center;
+    background-color: #916811;
+    border-radius: 15px;
+    border: 2px solid rgb(151, 106, 34);
+    box-shadow: #ffb006;
+}
+
+.contacto a:hover{
+    border-radius: 15px;
+    color: #ffffff;
+    transform: translateY(5px);
+    transition: .3s;
+}
+
+.menu{
+    display: flex;
+    flex: 4;
+    justify-content: space-evenly;
+    display: block;
+    width: fit-content;
 }
 
 header nav a{
@@ -194,9 +250,10 @@ header nav a{
     font-size: large;
 }
 
-header nav a:hover{
+.menu a:hover{
+    background-color: rgb(151, 106, 34);
+    border-radius: 15px;
     color: #ffffff;
-    transition: 0.3s;
 }
 
 .contenedor-servicios{
@@ -215,8 +272,24 @@ header nav a:hover{
     gap: 20px;
 }
 */
+main{
+    box-shadow: 0px 8px 20px rgba(8, 8, 8, 0.5);
+}
+footer{
+    background-color: white;
+    color: #916811;
+    text-align: center;
+    height: auto;
+    padding: 20px;
+    box-shadow: 0px 20px 20px rgb(170, 171, 187);
 
-@media (max-width: 320px){
+}
+
+footer h2{
+    text-align: center;
+}
+
+@media (max-width: 768px){
     .contenedor-servicios{
         flex-direction: column;
     }
