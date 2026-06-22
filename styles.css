@@ -24,6 +24,8 @@
     text-align: center;
     border-radius: 15px;
     box-shadow: 0px 8px 20px rgba(139, 101, 51, 0.5);
+    position:relative;
+    z-index:1;
 }
 
 .promocion h2{
@@ -124,6 +126,7 @@ body{
     display: flex;
     flex-direction: column;
     font-family: T;
+    position: relative;
     align-items: center;
     justify-content: space-evenly;
     background-image: url("img/fondo.jpg");
@@ -132,6 +135,13 @@ body{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+.hero::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,.45);
 }
 
 .bienvenida{
@@ -148,6 +158,8 @@ body{
     margin: 120px auto 0 auto;
     text-align: center;
     padding: 10px;
+    position:relative;
+    z-index:1;
 }
 
 .bienvenida h1{
@@ -225,11 +237,9 @@ header nav{
 
 .contacto{
     display: flex;
-    display: block;
     width: fit-content;
     flex: 1;
     justify-content: center;
-    padding: 10px;
     margin: 15px;
     text-align: center;
     background-color: #916811;
@@ -241,7 +251,7 @@ header nav{
 .contacto a:hover{
     border-radius: 15px;
     color: #ffffff;
-    transform: translateY(5px);
+    transform: translateY(-2px);
     transition: 0.3s;
 }
 
@@ -249,7 +259,6 @@ header nav{
     display: flex;
     flex: 4;
     justify-content: space-evenly;
-    display: block;
     width: fit-content;
 }
 
@@ -312,6 +321,23 @@ footer h2{
 
     .header nav{
         width: 80%;
+        flex-direction: column;
+    }
+
+    nav{
+        flex-direction:column;
+    }
+
+    .menu{
+        flex-direction:column;
+    }
+
+    .logo{
+        font-size: 1.5rem;
+    }
+
+    .bienvenida h1{
+        font-size: 2.5rem;
     }
 
 }
