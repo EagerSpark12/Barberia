@@ -112,6 +112,7 @@ html {
 }
 
 body{
+    margin: 0;
     min-height: 100vh;
     background:
     radial-gradient(
@@ -168,6 +169,11 @@ body{
     text-shadow: 0 8px 20px rgba(0,0,0,.8);
 }
 
+.hero:first-child h3::after{
+    content: " 🔥";
+    position: absolute;
+}
+
 .bienvenida h3{
     font-size: 2rem;
     text-shadow: 0 8px 20px rgba(0,0,0,.8);
@@ -184,6 +190,12 @@ body{
     box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.5);
     border-radius: 15px;
     color: #111;
+    transition: 0.3s;
+}
+
+.boton-bienvenida:active{
+    background-color: rgb(245, 240, 240);
+    transform: scale(0.9);
 }
 
 .boton-bienvenida:hover{
@@ -222,6 +234,11 @@ header nav{
     margin: auto;
     border: 2px solid rgb(46, 33, 33);
     box-shadow: 0px 4px 10px rgb(189, 190, 199);
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999;
 }
 
 .logo{
