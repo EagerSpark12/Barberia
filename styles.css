@@ -56,6 +56,8 @@
 
 .servicios h2{
     text-align: center;
+    font-size: 2.5rem;
+        border: 2px solid rgb(151, 106, 34);
 }
 .servicio span{
     color: #e2dada;
@@ -83,19 +85,86 @@
     transition: 0.3s;
 }
 
-.horario-atencion{
-    background-color:rgb(207, 230, 245);
-    width: 60%;
-    max-width: 1100px;
-    color: rgba(12, 25, 145, 0.7);
+.galeria h2{
     text-align: center;
-    padding: 10px;
-    border-left: 5px solid rgba(219, 220, 231, 0.5);
-    border-radius: 15px;
-    margin: 15px auto;
-    box-shadow: 0px 8px 20px rgba(61, 64, 87, 0.7);
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    border: 2px solid rgb(151, 106, 34);
+    padding: 15px;
+
 }
 
+.galeria-fotos{
+    margin: 15px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 50px;
+    border: 2px solid rgb(151, 106, 34);
+    border-radius: 15px;
+}
+
+.foto{
+    border-radius: 15px;
+    border: 2px solid rgba(226, 196, 95, 0.9);
+    overflow: hidden;
+    transition: 0.3s;
+    position: relative;
+}
+
+.foto:hover .texto{
+    transition: 0.3s;
+    transform: translateY(0px);
+    bottom: 30px;
+    opacity: 1;
+}
+
+.foto img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.foto:hover{
+    transform: translateY(-10px);
+    transform: scale(1.05);
+}
+.texto{
+    padding: 20px;
+    position: absolute;
+    opacity: 0;
+    color:#ffffff;
+    transform: translateY(20px);
+    bottom: -100px;
+}
+.foto:hover img{
+    filter: grayscale(100%) blur(1px) brightness(60%);
+}
+.seccion-horario h1{
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.horario-atencion{
+    text-align: center;
+    background-color: #1d201f;
+    width: 60%;
+    color: rgba(226, 196, 95, 0.9);
+    text-shadow: 2px 1px 10px rgba(204, 206, 94, 0.7);
+    max-width: 400px;
+    padding: 20px;
+    border: 2px solid #bb901b;
+    border-radius: 15px;
+    margin: auto;
+    box-shadow: 0px 8px 20px rgba(204, 156, 23, 0.7);
+    transition: 0.3s;
+    margin-bottom: 50px;
+}
+
+.testimonios h2{
+    text-align: center;
+    font-size: 2.5rem;
+} 
 .testimonio{
     width: 60%;
     max-width: 300px;
@@ -114,15 +183,14 @@ html {
 body{
     margin: 0;
     min-height: 100vh;
-    background:
-    radial-gradient(
-        125% 125% at 50% 90%,
-        #000000 30%,
-        #2b1d0e 100%
-    );
+    background: linear-gradient(to bottom, #161512 30%, #000000 70%);
     color: #999;
 }
 
+body h1, body h2{
+    color: #a1720c;
+    text-shadow: 0px 4px 20px;
+}
 .hero{
     display: flex;
     flex-direction: column;
@@ -130,13 +198,15 @@ body{
     position: relative;
     align-items: center;
     justify-content: space-evenly;
-    background-image: url("img/fondo.jpg");
+    background-image: url("img/hero/fondo.jpg");
     margin: 0;
     height: 100vh;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     animation: aparecer 1s;
+    filter: blur(px);
+    filter: grayscale;
 }
 
 .hero::before{
@@ -259,6 +329,7 @@ header nav{
     flex: 1;
     justify-content: center;
     margin: 15px;
+    padding: 12px 15px;
     text-align: center;
     background-color: #916811;
     border-radius: 15px;
@@ -314,19 +385,91 @@ main{
     box-shadow: 0px 8px 20px rgba(8, 8, 8, 0.5);
 }
 footer{
-    background-color: white;
     color: #916811;
     text-align: center;
     height: auto;
     padding: 20px;
-    box-shadow: 0px 20px 20px rgb(170, 171, 187);
-
 }
 
 footer h2{
     text-align: center;
 }
 
+.seccion-formulario{
+    background-color: #1d201f;
+    border-radius: 15px;
+    border: 2px solid rgb(151, 106, 34);
+    padding: 20px;
+    width: 60%;
+    margin: auto
+}
+.seccion-formulario h2{
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+    font-size: 1.5rem;
+}
+
+.formulario label{
+    padding: 10px;
+    color: #916811;
+    text-shadow: 0px 8px 10px;
+}
+
+.formulario input{
+    border: 2px solid rgb(151, 106, 34);
+    border-radius: 15px;
+    padding: 10px;
+    color: #ffffff;
+    font-size: 1rem;
+    background-color: #000000;
+}
+
+.formulario select{
+    background-color: #000000;
+    color: #FFFFFF;
+    border: 2px solid rgb(151, 106, 34);
+    border-radius: 15px;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+.formulario textarea{
+    background-color: #000000;
+    color: #FFFFFF;
+    border: 2px solid rgb(151, 106, 34);
+    border-radius: 15px;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+.formulario button{
+    background-color: #99671d;
+    color: #050000;
+    border: 2px solid rgb(151, 106, 34);
+    border-radius: 15px;
+    box-shadow: 0px 4px 15px rgb(151, 106, 34);
+    padding: 10px;
+    font-size: 1rem;
+    margin: auto;
+}
+
+.testimonios{
+    margin-top: 30px;
+    border-top: 2px solid rgb(151, 106, 34);
+    border-bottom: 2px solid rgb(151, 106, 34);
+}
+
+.testimonio{
+    margin: auto;
+    margin-bottom: 35px;
+}
 @media (max-width: 768px){
     .contenedor-servicios{
         flex-direction: column;
@@ -359,6 +502,28 @@ footer h2{
 
 }
 
+.contacto-redes a{
+    color:#d4af37;
+    text-decoration:none;
+    font-size:1rem;
+}
+
+.fa-brands{
+    color: #916811;
+    text-decoration: none;
+    padding: 5px;
+}
+
+.contacto-redes i:hover{
+    color:#ffffff;
+    transform:translateY(-5px);
+    transition:0.3s;
+}
+
+.bienvenida p{
+    font-size: 1.25rem;
+    margin-bottom: 40px;
+}
 @keyframes aparecer{
     from{
         transform:translateY(50px) ;
@@ -367,6 +532,16 @@ footer h2{
 
     to{
         transform:translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes corte-informacion{
+    from{
+        opacity: 0;
+    }
+
+    to{
         opacity: 1;
     }
 }

@@ -5,6 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Ejercicio 3</title>
         <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     </head>
     <body>
         <header>
@@ -12,9 +14,9 @@
                     <div class="logo">El corte fino</div>
 
                     <div class="menu">
-                        <a href="#bienvenida">Inicio</a>
+                        <a href="#inicio">Inicio</a>
                         <a href="#servicios">Servicios</a>
-                        <a href="#testimonio">Testimonios</a>
+                        <a href="#galeria">Galeria</a>
                         <a href="#contacto">Contacto</a>
                     </div>
                     
@@ -25,10 +27,11 @@
         </header>
 
         <main>
-            <section class="hero">
-                <section class ="bienvenida" id="bienvenida">
+            <section class="hero" id="inicio">
+                <section class ="bienvenida">
                     <h1>Bienvenido</h1>
                     <h3>Los mejores cortes de la zona.</h3>
+                    <p>Somos un pequeño emprendimiento de barberia con especialidad en cortes de cabello y venta de productos para el cuidado de la piel</p>
                     <a href="https://wa.me/528110027013?text=Hola,%20quiero%20agendar%20una%20cita%20" target="_blank" class="boton-bienvenida" aria-label="Agendar cita por WhatsApp">Agendar cita</a>
                     <a href="#servicios" class="boton-servicios">Servicios</a>
                 </section>
@@ -37,7 +40,7 @@
                     <p>Promocion de la semana: corte + barba por solo: $200</p>
                 </section>
             </section>
-                <section class="servicios" id="servicios">
+            <section class="servicios" id="servicios">
                 <h2>Servicios - Cortes</h2>
                 <div class="contenedor-servicios">
                     <article class="servicio corte-escolar">
@@ -78,11 +81,82 @@
                     </article>
                 </div>
             </section>
-            <section class="horario-atencion">
-                <h3>Consulta nuestros horarios:</h3>
-                <p>De Lunes a Sabado de 10:00 a.m. a 8:00 p.m.</p>
+            <section class="galeria" id="galeria">
+                <h2>Galeria:</h2>
+                <section class="galeria-fotos">
+                    <div class="foto">
+                        <img src="img/cortes/corte-1.jpg" alt="corte">
+                            <div class="texto">
+                                <h3>Corte General</h3>
+                            </div>
+                    </div>
+                    <div class="foto">
+                        <img src="img/cortes/corte-2.jpg" alt="corte">
+                            <div class="texto">
+                                <h3>Corte Taper</h3>
+                            </div>
+                    </div>
+                    <div class="foto">
+                        <img src="img/cortes/corte-3.jpg" alt="corte">
+                            <div class="texto">
+                                <h3>Corte Mullet</h3>
+                            </div>
+                    </div>
+                    <div class="foto">
+                        <img src="img/cortes/corte-4.jpg" alt="corte">
+                            <div class="texto">
+                                <h3>Corte General</h3>
+                            </div>
+                    </div>
+                    <div class="foto">
+                        <img src="img/cortes/corte-5.jpg" alt="corte">
+                            <div class="texto">
+                                <h3>Corte Taper Fade</h3>
+                            </div>
+                    </div>
+                    <div class="foto">
+                        <img src="img/cortes/corte-6..jpg" alt="corte">
+                            <div class="texto">
+                                <h3>Corte General</h3>
+                            </div>
+                    </div>
+                </section>
             </section>
-            <section class="testimonios" id="testimonio">
+            <section class="seccion-horario">
+                <h1>Horarios:</h1>
+                <section class="horario-atencion" >
+                    <h3>Consulta nuestros horarios:</h3>
+                    <p>De Lunes a Sabado de 10:00 a.m. a 8:00 p.m.</p>
+                </section>
+            </section>
+            <section class="seccion-formulario" id="contacto">
+                <h2>Formulario:</h2>
+                <form class="formulario">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" placeholder="Tu nombre">
+
+                    <label for="numero">Numero:</label>
+                    <input type="tel" id="telefono" placeholder="Tu numero">
+
+                    <label for="servicio">Servicios:</label>
+
+                    <select id="servicio">
+                        <option>Corte Escolar</option>
+                        <option>Corte Militar</option>
+                        <option>Corte Mullet</option>
+                    </select>
+
+                    <label for="mensaje">Mensaje:</label>
+
+                    <textarea type="text" id="mensaje" placeholder="Tu mensaje"></textarea>
+
+                    <button type="submit">
+                        Enviar
+                    </button>
+
+                </form>
+            </section>
+            <section class="testimonios">
                 <h2>Testimonios:</h2>
                     <article class="testimonio">
                         <h4>Carlos R.</h4>
@@ -92,12 +166,26 @@
             </section>
         </main>
         <footer>
-            <section>
-                <h2>Sobre nosotros:</h2> 
-                <p>Somos un pequeño emprendimiento de barberia con especialidad en cortes de cabello y venta de productos para el cuidado de la piel. </p>
-            </section>
-            <p id="contacto">Contacto: <span>8110027013</span></p>
             <p>El Corte Fino © 2026</p>
+            <p id="contacto">Contacto: <span>8110027013</span></p>
+            <p id="contacto">Correo: <span>hiramalejandro71@gmail.com</span></p>
+            <section class="contacto-redes">
+                <a href="https://wa.me/528110027013?" target="_blank">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+
+                <a href="https://www.instagram.com/hiram.alejandro.15/" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                
+                <a href="https://www.facebook.com/profile.php?id=61571356767578" target="_blank">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+
+                <a href="https://github.com/EagerSpark12" target="_blank">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </section>
         </footer>
         
     </body>
