@@ -470,6 +470,18 @@ footer h2{
     margin: auto;
     margin-bottom: 35px;
 }
+
+.hamburguesa{
+    display: none;
+}
+
+#menu-toggle{
+    display: none;
+}
+
+.menu-movil{
+    display: none;
+}
 @media (max-width: 768px){
     .contenedor-servicios{
         flex-direction: column;
@@ -479,27 +491,51 @@ footer h2{
         width: 90%;
     }
 
-    .header nav{
+    header nav{
         width: 80%;
         flex-direction: column;
     }
 
-    nav{
+    .hamburguesa{
+    display:block;
+    font-size:2rem;
+    cursor:pointer;
+    color:white;
+}
+
+    .menu-movil{
+        display:block !important;
         flex-direction:column;
+        width:100vw;
+        background:black;
+        position:fixed;
+        top:70px;
+        left:0;
+        padding: 20px;
+        z-index: 99999;
     }
 
+    nav{
+        justify-content: space-evenly;
+        flex-direction:row;
+        font-size: 1rem;
+    }
+
+    #menu-toggle:checked ~ .menu-movil{
+        display: flex;
+    }
     .menu{
-        flex-direction:column;
+        display: none;
     }
 
     .logo{
         font-size: 1.5rem;
+        flex: 1.5;
     }
 
     .bienvenida h1{
         font-size: 2.5rem;
     }
-
 }
 
 .contacto-redes a{
