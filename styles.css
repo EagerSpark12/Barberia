@@ -491,7 +491,7 @@ footer h2{
         width: 90%;
     }
 
-    header nav{
+    .header nav{
         width: 80%;
         flex-direction: column;
     }
@@ -501,10 +501,10 @@ footer h2{
     font-size:2rem;
     cursor:pointer;
     color:white;
-}
+    }
 
     .menu-movil{
-        display:block !important;
+        display:none;
         flex-direction:column;
         width:100vw;
         background:black;
@@ -512,7 +512,7 @@ footer h2{
         top:70px;
         left:0;
         padding: 20px;
-        z-index: 99999;
+        z-index: 1000;
     }
 
     nav{
