@@ -404,7 +404,7 @@ footer h2{
 }
 .seccion-formulario h2{
     text-align: center;
-    font-size:clamp(2rem, 2vw, 3rem);
+    font-size:clamp(1.5rem, 2vw, 2rem);
 }
 
 .formulario{
